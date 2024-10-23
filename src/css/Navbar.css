@@ -1,0 +1,70 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 8px 0px;
+}
+.profileimg{
+    width: 35px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.right a{
+    padding: 7px 12px;
+    border-radius: 100px;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 10px;
+}
+.right a:nth-child(5){
+    padding: 10px;
+}
+.right a:hover{
+    background-color: var(--bg-Primary-hover);
+}
+.right svg{
+    font-size: 18px;
+}
+.right img{
+    border-radius: 50%;
+}
+.left{
+    gap: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left svg{
+    margin: 0px 8px;
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.left svg:hover{
+    background: var(--bg-Primary-hover);
+}
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlinks a{
+    padding: 10px 18px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.navlinks a:hover{
+    background: var(--bg-Primary-hover);
+}
