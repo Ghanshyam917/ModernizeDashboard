@@ -5,7 +5,7 @@ const Card = (props) => {
   const { cardData } = props;
   return (
     <Wrapper>
-      <div className="card" style={{ backgroundColor: `${cardData.bgClr}`,border:`1px solid ${cardData.color}` }}>
+      <div className="carddiv" style={{ backgroundColor: `${cardData.bgClr}`,border:`1px solid ${cardData.color}` }}>
         <div className="image">
           <img src={cardData.image} alt="" />
         </div>
@@ -20,9 +20,17 @@ const Card = (props) => {
   );
 };
 const Wrapper = styled.div`
-  .card {
+  .carddiv {
     padding: 24px;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 10px;
   }
   .name {
     margin-top: 10px;

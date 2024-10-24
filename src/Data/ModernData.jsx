@@ -1,3 +1,6 @@
+import { HiMiniArrowUpLeft } from "react-icons/hi2";
+import { HiMiniArrowDownRight } from "react-icons/hi2";
+
 const card = [
     {
         image:"https://modernize-react.adminmart.com/assets/icon-user-male-ff0c3edd.svg",
@@ -43,4 +46,27 @@ const card = [
     },
 ]
 
+const YearlyData = [
+    {
+      formate:"Yearly",
+      heading: "Yearly Breakup",
+      price: "$36,358",
+      percentage: "+9%",
+      icon: <HiMiniArrowUpLeft />,
+      color: "rgb(57 182 154)",
+      backClr: "rgb(230 255 250)",
+    },
+    {
+      formate:"Monthly",
+      heading: "Monthly Earnings",
+      price: "$6,820",
+      percentage: "+9%",
+      icon: <HiMiniArrowDownRight />,
+      iconformate:"downright",
+      color: "rgb(250 137 107)",
+      backClr: "rgb(253 237 232)",
+    },
+  ];
+
 export default card
+export {YearlyData}
